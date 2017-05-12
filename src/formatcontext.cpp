@@ -205,10 +205,10 @@ Stream FormatContext::addStream(const Codec &codec, error_code &ec)
         return Stream();
     }
 
-    if (!outputFormat().codecSupported(codec)) {
+/*    if (!outputFormat().codecSupported(codec)) {
         throws_if(ec, Errors::FormatCodecUnsupported);
         return Stream();
-    }
+    }*/
 
     auto rawcodec = codec.raw();
     AVStream *st = nullptr;
