@@ -15,7 +15,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED yes)
 
 # -pthread sets also some useful compile-time flags
 set(THREADS_PREFER_PTHREAD_FLAG ON)
-find_package(Threads)
+#find_package(Threads)
 
 find_package(FFmpeg
     COMPONENTS AVCODEC AVFORMAT AVUTIL AVDEVICE AVFILTER SWSCALE SWRESAMPLE REQUIRED)
@@ -25,6 +25,6 @@ find_package(FFmpeg
 add_subdirectory(src)
 #add_subdirectory(example/test-basic)
 #add_subdirectory(example/sample-transcode)
-add_subdirectory(example/api2-samples)
+#add_subdirectory(example/api2-samples)
 #add_subdirectory(example/sample-view)
 
