@@ -167,8 +167,8 @@ void init()
     av_register_all();
     avformat_network_init();
     avcodec_register_all();
-    avfilter_register_all();
-    avdevice_register_all();
+//    avfilter_register_all();
+//    avdevice_register_all();
 
     av_lockmgr_register(avcpp_lockmgr_cb);
     set_logging_level(AV_LOG_ERROR);
